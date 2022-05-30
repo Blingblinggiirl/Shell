@@ -8,8 +8,8 @@ MINUTES=1
 while [ $MINUTES -lt 60 ]
 do
 echo $MINUTES
-let MINUTES+=1
+(( expr )) MINUTES+=1
 done
-let HOURS+=1
+(( expr )) HOURS+=1
 done
 
