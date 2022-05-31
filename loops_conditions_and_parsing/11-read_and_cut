@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#111
+file="/etc/passwd"
+while read -r line; 
+do 
+echo $line | cut -d":" -f 1,6
+done < $file
